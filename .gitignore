@@ -1,1 +1,7 @@
 /bin/
+.classpath
+.project
+.settings/.jsdtscope
+*.xml
+.settings/org.eclipse.wst.jsdt.ui.superType.container
+*.name
