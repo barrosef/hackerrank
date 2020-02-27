@@ -39,14 +39,13 @@ public class Solution {
 	
 	public static void main() {
         
-        int x;
-        double j;
-        String t;
+        int i = 0;
+        double d = 0.0;
+        String s = "String";
 
-        x = scanner.nextInt();
-        j = scanner.nextDouble();        
-        scanner.nextLine();
-        t = scanner.nextLine();
+        int x = scanner.nextInt();
+        double j = scanner.nextDouble();        
+        String t = scanner.nextLine();
 
         System.out.println(i + x);
 
