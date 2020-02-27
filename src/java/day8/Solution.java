@@ -1,21 +1,28 @@
 package day8;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
-public class Solution {
-
-	private static Scanner scanner = new Scanner(System.in);
-
-	public static void main(String[] args) {
-		int n = scanner.nextInt();
-		scanner.close();
-		String ans = "";
-
-		if (n % 2 == 1 || (n > 5 && n <= 20)) {
-			ans = "Weird";
-		} else {
-			ans = "Not Weird";
-		}
-		System.out.println(ans);
-	}
+class Solution{
+    public static void main(String []args){
+        Map<String,Integer> phoneBook = new HashMap<String,Integer>();
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i = 0; i < n; i++){
+            String name = scan.next();
+            int phone = scan.nextInt();
+            phoneBook.put(name, phone);
+        }
+        while(scan.hasNext()){
+            String s = scan.next();
+            Integer phoneNumber = phoneBook.get(s);
+            System.out.println(
+                (phoneNumber != null) 
+                ? s + "=" + phoneNumber 
+                : "Not found"
+            );
+        }
+        scan.close();
+    }
 }
