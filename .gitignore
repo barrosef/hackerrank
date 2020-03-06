@@ -1,7 +1,10 @@
-/bin/
-.classpath
-.project
-.settings/.jsdtscope
-*.xml
-.settings/org.eclipse.wst.jsdt.ui.superType.container
-*.name
+
+bin/
+
+30_days_of_code/.project
+
+30_days_of_code/.classpath
+
+language_proficiency/.classpath
+
+language_proficiency/.project
