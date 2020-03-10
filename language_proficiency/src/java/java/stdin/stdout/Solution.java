@@ -9,12 +9,15 @@ import java.util.Scanner;
  */
 public class Solution {
 
+	static Scanner scanner = new Scanner(System.in);
+	
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        
         for(int i = 0; i < 3; i++) {
-            int a = scan.nextInt();
+            int a = scanner.nextInt();
             System.out.println(a);
         }
+        scanner.close();
     }	
 	
 }
