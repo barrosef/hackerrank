@@ -16,13 +16,15 @@ public class Solution {
 	
 	public static void main(String[] args) {
 		
-		int hourglasses[] = new int[6];
+		int hourglasses[] = new int[7];
 		int hourglasseArrayIndex = 0;
 		
 		for(int i = 0; i < 6; i++) {
 			
 			for(int j = 0; j < 6; j++) {
-				if (j > 1 || j < 4) {
+				if (j > 0 || j < 4) {
+					//Ele participa do anterior hourglassesArrayIndex - 1;
+					//recursividade até o
 					hourglasses[hourglasseArrayIndex] += scanner.nextInt();
 				}
 			}
