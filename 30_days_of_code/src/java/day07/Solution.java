@@ -24,7 +24,7 @@ import java.util.Scanner;
  * Output Format
  * Print the elements of array  in reverse order as a single line of space-separated numbers.
  * 
- * @author edbarros
+ * @author barrosef - barrosef@gmail.com
  * 
  * @version 1.0 march 14, 2020
  */

@@ -3,7 +3,11 @@ package day14;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
+/**
+ * 
+ * @author barrosef - barrosef@gmail.com
+ *
+ */
 class Difference {
   	private int[] elements;
   	public int maximumDifference;

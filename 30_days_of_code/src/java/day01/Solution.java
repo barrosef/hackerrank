@@ -3,6 +3,7 @@ package day01;
 import java.util.Scanner;
 
 /**
+ * HackerHank challenge
  * 
  * Objective
  * 

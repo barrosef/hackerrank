@@ -1,5 +1,9 @@
 package day04;
 
+/**
+ * 
+ * @author barrosef - barrosef@gmail.com
+ */
 public class Person {
     private int age;	
   

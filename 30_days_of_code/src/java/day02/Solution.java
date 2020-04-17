@@ -2,6 +2,12 @@ package day02;
 
 import java.util.Scanner;
 
+/**
+ * HackerHank challenge
+ * 
+ * @author barrosef - barrosef@gmail.com
+ *
+ */
 public class Solution {
     
     static final double ONE_HUNDRED = 100;

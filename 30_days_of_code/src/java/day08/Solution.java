@@ -4,6 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author barrosef - barrosef@gmail.com
+ *
+ */
 class Solution{
     public static void main(String []args){
         Map<String,Integer> phoneBook = new HashMap<String,Integer>();

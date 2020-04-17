@@ -2,6 +2,11 @@ package day15;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author barrosef - barrosef@gmail.com
+ *
+ */
 class Node {
 	int data;
 	Node next;

@@ -5,6 +5,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author barrosef - barrosef@gmail.com
+ *
+ */
 public class Solution {
 
     // Complete the factorial function below.

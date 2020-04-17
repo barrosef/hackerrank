@@ -2,6 +2,11 @@ package day16;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author barrosef - barrosef@gmail.com
+ *
+ */
 public class Solution {
     
 	static Scanner scanner = new Scanner(System.in);

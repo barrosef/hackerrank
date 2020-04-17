@@ -3,6 +3,11 @@ package day10;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author barrosef - barrosef@gmail.com
+ *
+ */
 public class Solution {
 
 

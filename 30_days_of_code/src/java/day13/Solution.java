@@ -2,6 +2,12 @@ package day13;
 
 import java.util.*;
 
+/**
+ * 
+ * @author barrosef - barrosef@gmail.com
+ *
+ */
+
 abstract class Book {
     String title;
     String author;

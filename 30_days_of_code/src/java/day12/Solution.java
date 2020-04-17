@@ -2,6 +2,11 @@ package day12;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author barrosef - barrosef@gmail.com
+ *
+ */
 class Person {
 	
 	protected String firstName;

@@ -3,6 +3,8 @@ package day00;
 import java.util.Scanner;
 
 /**
+ * HackerHank challenge
+ * 
  * Objective
  *
  * In this challenge, we review some basic concepts that will get you started with this series.
