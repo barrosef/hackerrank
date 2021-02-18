@@ -9,25 +9,24 @@ class Node{
 	Node(int d){
         data=d;
         next=null;
-    }
-	
+    }	
 }
 
 class Solution
 {
 
-    public static Node removeDuplicates(Node head) {
-        Node curr = head;
-        List<Integer> datas = new ArrayList<Integer>();
-        datas.add(curr.data);
-        while(curr.next != null) {
-            if(datas.contains(curr.next.data)) {
-                curr.next = curr.next.next;
-            }	else	{
-            	datas.add(curr.next.data);
-            	curr = curr.next;
-            }                
-        }
+    public static Node removeDuplicates(Node head, List<Integer> ...argDatas) {
+    	List<Integer> datas = (argDatas.length > 0) ? argDatas[0] : new ArrayList<Integer>();
+    	
+    	if (head != null) {
+    		if (!datas.contains(head.data)) {
+    			datas.add(head.data);
+    		} else {
+    			return removeDuplicates(head.next, datas);
+    		}
+			head.next = removeDuplicates(head.next, datas);
+    	}
+
         return head;
     }
 
@@ -51,25 +50,25 @@ class Solution
 
     public static void display(Node head)
     {
-            Node start=head;
-            while(start!=null)
-            {
-                System.out.print(start.data+" ");
-                start=start.next;
-            }
+        Node start=head;
+        while(start!=null)
+        {
+            System.out.print(start.data+" ");
+            start=start.next;
+        }
     }
 
     public static void main(String args[])
     {
-            Scanner sc=new Scanner(System.in);
-            Node head=null;
-            int T=sc.nextInt();
-            while(T-->0){
-                int ele=sc.nextInt();
-                head=insert(head,ele);
-            }
-            head=removeDuplicates(head);
-            display(head);
+        Scanner sc=new Scanner(System.in);
+        Node head=null;
+        int T=sc.nextInt();
+        while(T-->0){
+            int ele=sc.nextInt();
+            head=insert(head,ele);
+        }
+        head=removeDuplicates(head);
+        display(head);
 
     }
 }
