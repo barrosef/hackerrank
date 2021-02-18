@@ -14,11 +14,10 @@ public class Solution {
 
     // Complete the factorial function below.
     static int factorial(int n) {
-        int fact = n;   
-        for(int i = n - 1; i > 0; i--){    
-            fact = fact * i;    
-        }    
-        return fact;
+    	if (n == 0) {
+    		return 1;
+    	}
+        return n * factorial(n - 1);
     }
 
     private static final Scanner scanner = new Scanner(System.in);
