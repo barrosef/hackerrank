@@ -3,10 +3,12 @@ package day02;
 import java.util.Scanner;
 
 /**
- * HackerHank challenge
+ * <strong>HackerHank</strong> challenge <strong>Day 02: Operators</strong>, solved using <strong>java 8</strong> programming language
  * 
- * @author barrosef - barrosef@gmail.com
- *
+ * <strong>Challenge</strong>
+ * Given the meal price and percentage of tip and  tax, calculate the total cost.  
+ * 
+ * @author Ed Barros / barrosef@gmail.com 
  */
 public class Solution {
     

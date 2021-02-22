@@ -8,3 +8,6 @@ bin/
 language_proficiency/.classpath
 
 language_proficiency/.project
+/.metadata/
+
+RemoteSystemsTempFiles/.project

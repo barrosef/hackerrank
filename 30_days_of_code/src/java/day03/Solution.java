@@ -3,7 +3,7 @@ package day03;
 import java.util.Scanner;
 
 /**
- * <strong>HackerHank</strong> challenge <strong>day03: Intro to Conditional Statements</strong>, solved using <strong>java 8</strong> programming language
+ * <strong>HackerHank</strong> challenge <strong>Day 03: Intro to Conditional Statements</strong>, solved using <strong>java 8</strong> programming language
  * 
  * <strong>Challenge</strong>
  * Given int value print: <strong>'Weird when'</strong>
@@ -15,7 +15,6 @@ import java.util.Scanner;
  * 
  * @author Ed Barros / barrosef@gmail.com 
  */
-
 public class Solution {
    
    public static void main(String[] args) {
