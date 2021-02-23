@@ -15,22 +15,22 @@ import java.util.Scanner;
  */
 public class Solution {
 	
-	private static final Scanner scanner = new Scanner(System.in);
+        private static final Scanner scanner = new Scanner(System.in);
 	
 	public static void main() {
         
-        int i = 4;
-        double d = 4.0;
-        String s = "HackerRank ";
+                int i = 4;
+                double d = 4.0;
+                String s = "HackerRank ";
 
-        int x = scanner.nextInt();
-        double j = scanner.nextDouble();        
-        String t = scanner.nextLine();
+                int x = scanner.nextInt();
+                double j = scanner.nextDouble();        
+                String t = scanner.nextLine();
 
-        System.out.println(i + x);
+                System.out.println(i + x);
 
-        System.out.println(d + j);
+                System.out.println(d + j);
 
-        System.out.println(s + t);
+                System.out.println(s + t);
 	}	
 }

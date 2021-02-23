@@ -2,6 +2,7 @@ package day00;
 
 import java.util.Scanner;
 
+static String HELLO_WORLD = "Hello, World.;
 /**
  * <strong>HackerHank</strong> challenge <strong>Day 0: Data Types</strong>, solved using <strong>java 8</strong> programming language
  * 
@@ -20,7 +21,7 @@ public class Solution {
 
 		scanner.close(); 
       
-		System.out.println("Hello, World.");
+		System.out.println(HELLO_WORLD);
       
 		System.out.println(inputString);
     }

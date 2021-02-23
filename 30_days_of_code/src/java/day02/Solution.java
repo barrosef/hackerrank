@@ -28,7 +28,7 @@ public class Solution {
         
         long total_cost = Math.round(meal_cost + tip_cost + tax_cost);
         
-        System.out.println("The total meal cost is " + total_cost +" dollars.");
+        System.out.println(total_cost);
         
         in.close();
     }

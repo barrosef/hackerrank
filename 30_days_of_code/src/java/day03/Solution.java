@@ -16,22 +16,22 @@ import java.util.Scanner;
  * @author Ed Barros / barrosef@gmail.com 
  */
 public class Solution {
-   
+
+   static final String WEIRD = "Weird";
+   static final String NOT_WEIRD = "Not Weird";
+
    public static void main(String[] args) {
       Scanner scan = new Scanner(System.in);
       int n = scan.nextInt();
       
       scan.close();
-      String ans="";
+      String ans = NOT_WEIRD;
           
       /*
        *  if 'n' (value) is odd not divisible by 2 or 5 < n <= 20
        */
       if(n % 2 == 1 || (n > 5 && n <= 20)){
-         ans = "Weird";
-      }
-      else {
-    	  ans = "Not Weird";
+         ans = WEIRD;
       }
       
       System.out.println(ans);
