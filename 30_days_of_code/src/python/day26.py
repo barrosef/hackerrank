@@ -1,4 +1,3 @@
-<<<<<<< develop
  # Hacker Rank challenge day 26: Nested Logic, solved using Go programming language
  #
  # Challenge
@@ -11,8 +10,6 @@
  #
  # @author Ed Barros - barrosef@gmail.com
 
-=======
->>>>>>> Day 26 challenge in python
 actually = str(input()).split(" ")
 da = int(actually[0])
 ma = int(actually[1])
