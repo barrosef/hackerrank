@@ -1,10 +1,28 @@
-/**
- * 
- */
 package day27;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
+
+/**
+ * <strong>Hacker Rank</strong> challenge <strong>day 27: Unit testing</strong>, solved using <strong>java 8</strong> programming language
+ * 
+ * <strong>Challenge</strong>
+ * To help unit testing create the methods:
+ * 
+ * In the class TestDataEmptyArray create the get_array() method that return an empty array
+ * 
+ * 
+ * In the class TestDataUniqueValues create the methods:
+ * get_array() returns an array of size at least 2 with all unique elements
+ * get_expected_result() returns the expected minimum value index for this array
+ * 
+ * In the class TestDataExactlyTwoDifferentMinimums:
+ * get_array() returns an array where the minimum value occurs at exactly 2 indices
+ * get_expected_result() returns the expected index 
+ * 
+ * @see TestDataEmptyArray, TestDataUniqueValues, TestDataExactlyTwoDifferentMinimums
+ * @author Ed Barros - barrosef@gmail.com
+ */
 
 public class Solution {
 
