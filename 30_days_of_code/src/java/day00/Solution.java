@@ -2,7 +2,6 @@ package day00;
 
 import java.util.Scanner;
 
-static String HELLO_WORLD = "Hello, World.;
 /**
  * <strong>HackerHank</strong> challenge <strong>Day 0: Data Types</strong>, solved using <strong>java 8</strong> programming language
  * 
@@ -14,7 +13,8 @@ static String HELLO_WORLD = "Hello, World.;
 public class Solution {
 
 	private static final Scanner scanner = new Scanner(System.in);
-
+	static String HELLO_WORLD = "Hello, World.";
+	
 	public static void main(String[] args) {
 		
 		String inputString = scanner.nextLine(); 
