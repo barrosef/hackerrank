@@ -7,11 +7,11 @@ import java.util.Scanner;
  * 
  * <strong>Challenge</strong>
  * Given int value print: <strong>'Weird when'</strong>
- * - value is odd;
- * - value is even and in the inclusive between 6 and 20.
+ *    - value is odd;
+ *    - value is even and in the inclusive between 6 and 20.
  * Print <strong>'Not Weird'</strong>
- * - value is even and in the inclusive between 2 and 5
- * - value is greater than 20 
+ *    - value is even and in the inclusive between 2 and 5
+ *    - value is greater than 20 
  * 
  * @author Ed Barros / barrosef@gmail.com 
  */
@@ -25,14 +25,27 @@ public class Solution {
       Scanner scan = new Scanner(System.in);
       int n = scan.nextInt();
       scan.close();
-          
-      /*
-       *  if 'n' (value) is odd not divisible by 2 or 5 < n <= 20
-       */
-      if(n % 2 == 1 || (n > 5 && n <= 20)){
-         ans = WEIRD;
-      }
       
+      if (isValid(n)) {
+         /*
+         *  if 'n' (value) is odd not divisible by 2 or 5 < n <= 20
+         */
+         if(n % 2 == 1 || (n > 5 && n <= 20)){
+            ans = WEIRD;
+         }
+      } else {
+         ans = "Don't compliance with constraint 1 <= n <= 100 no";
+      }
+
       System.out.println(ans);
+   }
+
+   /**
+    * Check constraint 1 <= n <= 100
+    * @param n given number to role implementation
+    * @return boolean
+    */
+   private static boolean isValid(int n) {
+      return n >= 1 && n <= 100;
    }
 }
