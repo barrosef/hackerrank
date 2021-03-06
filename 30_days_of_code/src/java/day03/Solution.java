@@ -21,11 +21,10 @@ public class Solution {
    static final String NOT_WEIRD = "Not Weird";
 
    public static void main(String[] args) {
+      String ans = NOT_WEIRD;
       Scanner scan = new Scanner(System.in);
       int n = scan.nextInt();
-      
       scan.close();
-      String ans = NOT_WEIRD;
           
       /*
        *  if 'n' (value) is odd not divisible by 2 or 5 < n <= 20
