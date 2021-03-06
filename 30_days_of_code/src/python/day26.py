@@ -9,6 +9,7 @@
  # When no late return fine is 0
  #
  # @author Ed Barros - barrosef@gmail.com
+ # Day 26 challenge in python
 
 actually = str(input()).split(" ")
 da = int(actually[0])
