@@ -42,6 +42,11 @@ public class Solution {
     private static final String N_CONSTRAINT_ERROR_MSG ="n = %o is not compliance with constraint %o <= n <= %o";
 
     /**
+     * 
+     */
+    private static final String ROLE_CONSTRAINT_ERROR_MSG = "%s is not compliance with regex %s";
+
+    /**
      * Stream to input values
      */
     private static final Scanner scanner = new Scanner(System.in);
@@ -56,14 +61,35 @@ public class Solution {
         return N_MIN <= n && n <= N_MAX;
     }
 
+    /**
+     * Parametrized check constraint 
+     * 
+     * @param value value to matcher
+     * @param regex regex to compare
+     * @return value matches regex?
+     */
     private static boolean isValidRegex(String value, String regex) {
-        return Pattern.compile(regex).matcher(value).matches();
+        boolean res = Pattern.compile(regex).matcher(value).matches();
+        if ( !res ) {
+            System.out.printf(ROLE_CONSTRAINT_ERROR_MSG, value, regex);
+        }
+        return res;
     }
 
+    /**
+     * Constraint <strong>name in lowercase</strong> implementation
+     * @param name
+     * @return name is valid?
+     */
     private static boolean isValidName(String name) {
         return isValidRegex(name, NAME_RE);
     }
 
+    /**
+     * Constraint <strong>email in email address format and lowercase</strong> implementation
+     * @param name
+     * @return email is valid?
+     */
     private static boolean isValidEmail(String email) {
         return isValidRegex(email, EMAIL_RE);
     }
