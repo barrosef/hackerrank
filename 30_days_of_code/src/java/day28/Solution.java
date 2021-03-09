@@ -42,7 +42,7 @@ public class Solution {
     private static final String N_CONSTRAINT_ERROR_MSG ="n = %o is not compliance with constraint %o <= n <= %o";
 
     /**
-     * 
+     * Print when regex not matches
      */
     private static final String ROLE_CONSTRAINT_ERROR_MSG = "%s is not compliance with regex %s";
 
