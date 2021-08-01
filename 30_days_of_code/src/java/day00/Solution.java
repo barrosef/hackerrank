@@ -12,16 +12,31 @@ import java.util.Scanner;
  */
 public class Solution {
 
+	/**
+	 * Hello, World. Expression to print in this program
+	 */
+	private static final String HELLO_WORLD_TEXT = "Hello, World.";
+
+	/**
+	 * java.util.Scanner object to input interaction
+	 */
 	private static final Scanner scanner = new Scanner(System.in);
+
 
 	public static void main(String[] args) {
 		
-		String inputString = scanner.nextLine(); 
-
-		scanner.close(); 
-      
 		System.out.println("Hello, World.");
       
-		System.out.println(inputString);
+		System.out.println(getInputText());
     }
+
+	/**
+	 * Implements the interaction between our java program and scanner java.util.Scanner object.
+	 * @return inputed text String object
+	 */
+	public static String getInputText() {
+		String inputText = scanner.nextLine();
+		scanner.close();
+		return inputText;
+	}
 }
