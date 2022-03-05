@@ -31,7 +31,7 @@ public class Generics {
         intPrinter.printArray( intArray  );
         stringPrinter.printArray( stringArray );
         if(Printer.class.getDeclaredMethods().length > 1){
-            System.out.println("Mais um para reverter");
+            System.out.println("Reverteu");
         }
     } 
 }
