@@ -3,12 +3,6 @@ package day21;
 import java.util.*;
 
 class Printer <T> {
-    /**
-    *    Method Name: printArray
-    *    Print each element of the generic array on a new line. Do not return anything.
-    *    @param A generic array
-    **/
-    
 	void printArray(T array[]) {
 		for(T item : array) {
 			System.out.println(item);
@@ -37,7 +31,7 @@ public class Generics {
         intPrinter.printArray( intArray  );
         stringPrinter.printArray( stringArray );
         if(Printer.class.getDeclaredMethods().length > 1){
-            System.out.println("The Printer class should only have 1 method named printArray.");
+            System.out.println("Teste revert commit");
         }
     } 
 }
